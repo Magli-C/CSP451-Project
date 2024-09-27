@@ -1,0 +1,21 @@
+Name: Part E quickstart action
+
+on:
+ push:
+  branches: [ main, feat-body-text ]
+jobs:
+ print-message:
+  runs-on: windows-latest
+
+  steps:
+   - name: Checkout Repository
+     uses: actions/checkout@v2
+
+   - name: Message
+     run: echo "Quickstart Github Actions"
+
+   - name: Working Directory
+     run: echo "$(pwd)"
+
+   - name: Repository URL
+     run: echo "${{ github.repository }}"
