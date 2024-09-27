@@ -1,4 +1,4 @@
-Name: Part E quickstart action
+name: Part E quickstart action
 
 on:
  push:
